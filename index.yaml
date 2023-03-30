@@ -1,0 +1,54 @@
+apiVersion: v1
+entries:
+  mariadb:
+  - annotations:
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 10.6.12
+    created: "2023-03-30T11:17:18.15141113+05:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MariaDB is an open source, community-developed SQL database server
+      that is widely in use around the world due to its enterprise features, flexibility,
+      and collaboration with leading tech firms.
+    digest: 40cd93285012baa0ac72160ab2c145414e54cce1888deb0cfda5c4abfc9f6483
+    home: https://github.com/bitnami/charts/tree/main/bitnami/mariadb
+    icon: https://bitnami.com/assets/stacks/mariadb/img/mariadb-stack-220x234.png
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - prometheus
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: mariadb
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/mariadb
+    - https://github.com/prometheus/mysqld_exporter
+    - https://mariadb.org
+    urls:
+    - https://shivani446.github.io/podcastwala-helm-artifect/charts/mariadb-11.5.3.tgz
+    version: 11.5.3
+  podcast-helm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-30T11:17:18.148993003+05:30"
+    dependencies:
+    - name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.5.3
+    description: A Helm chart for Kubernetes
+    digest: 5df4f2047412dfd0f63a815a9b8357b7f346d2545b57956d774e3c0a85caecb2
+    name: podcast-helm
+    type: application
+    urls:
+    - https://shivani446.github.io/podcastwala-helm-artifect/podcast-helm-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-30T11:17:18.145366981+05:30"
